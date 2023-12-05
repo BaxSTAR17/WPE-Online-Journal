@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+}
+
+.mainwrap {
+    height: 100dvh;
+    width: 100dvw;
+    position: relative;
+}
+
+.bgimage, .filter {
+    position: absolute;
+    height: 100dvh;
+    width: 100dvw;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.bgimage {
+    background-size: cover;
+}
+
+.a1 {
+    background-image: url(./images/A\ Brand\ New\ World\,\ Brand\ New\ Colors.jpg);
+}
+
+.b1 {
+    background-image: url(./images/A\ Warrior\'s\ Fight.jpg);
+}
+
+.c1 {
+    background-image: url(./images/BAX\ Star\ End\ drop.png);
+}
+
+.d1 {
+    background-image: url(./images/Spring\ Snow\ EC.jpg);
+}
+
+.e1 {
+    background-image: url(./images/SUMMER\ SUMMER.jpg);
+}
+
+.f1 {
+    background-image: url(./images/The\ Cure.jpg);
+}
+
+.g1 {
+    background-image: url(./images/The\ Wonder\ Tree\ SONG.jpg);
+}
+
+.ha1 {
+    background-image: url(./images/TURTLE\ EC\ Lyric\ Card.png);
+}
+
+.a2 {
+    background: linear-gradient(transparent, rgb(217, 134, 147));
+}
+
+.b2 {
+    background: linear-gradient(transparent, darkblue);
+}
+
+.c2 {
+    background: linear-gradient(transparent, teal);
+}
+
+.d2 {
+    background: linear-gradient(transparent, rgb(85, 165, 165));
+}
+
+.e2 {
+    background: linear-gradient(transparent, skyblue);
+}
+
+.f2 {
+    background: linear-gradient(transparent, indigo);
+}
+
+.g2 {
+    background: linear-gradient(transparent, darkviolet);
+}
+
+.ha2 {
+    background: linear-gradient(transparent, magenta);
+}
+
+.movies {
+    display: flex;
+    width: 100dvw;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 40dvh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mov {
+    height: 200px;
+    width: 130px;
+    box-shadow: 4px 4px 7px var(--color);
+    border: 2px solid var(--color);
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+}
+
+.mov:hover {
+    scale: 1.2;
+}
+
+#one:checked ~ .a {
+    opacity: 1;
+}
+
+#two:checked ~ .b {
+    opacity: 1;
+}
+
+#three:checked ~ .c {
+    opacity: 1;
+}
+
+#four:checked ~ .d {
+    opacity: 1;
+}
+
+#five:checked ~ .e {
+    opacity: 1;
+}
+
+#six:checked ~ .f {
+    opacity: 1;
+}
+
+#seven:checked ~ .g {
+    opacity: 1;
+}
+
+#eight:checked ~ .h {
+    opacity: 1;
+}
+
+#one:checked ~ .movies .one {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#two:checked ~ .movies .two {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#three:checked ~ .movies .three {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#four:checked ~ .movies .four {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#five:checked ~ .movies .five {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#six:checked ~ .movies .six {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#seven:checked ~ .movies .seven {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#eight:checked ~ .movies .eight {
+    scale: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.moviecurtains {
+    height: 100dvh;
+    width: 100dvw;
+    background: linear-gradient(90deg, black, transparent, transparent, transparent, transparent, black);
+    position: absolute;
+}
+
+.backbtn {
+    top: 2dvh;
+    left: 2dvw;
+    height: 25px;
+    width: 90px;
+    border: 2px solid white;
+    background: linear-gradient(217deg, rgba(7, 85, 85, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(99, 99, 18, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(120, 14, 120, 0.8), rgba(0,0,255,0) 70.71%);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: tahoma;
+    font-weight: 550;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+}
+
+.backbtn:hover {
+    scale: 1.54;
+    border-color: yellow;
+    color: yellow;
+}
+
+input {
+    display: none;
+}

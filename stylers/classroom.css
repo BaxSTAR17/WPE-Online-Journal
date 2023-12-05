@@ -1,0 +1,51 @@
+.bgclassroom { background-image: url("../assets/images/classroom.gif");
+  background-size: cover; width: 100dvw; height: 100dvh; z-index: -1;}
+.bgclassroom::before {
+  opacity: 1;
+}
+.bgclassroom::after {
+  opacity: 1;
+}
+.p1 {
+  transform: translate(35dvw, 54dvh);
+}
+.pic1 { opacity: 0; }
+.pic1:nth-of-type(3) { opacity: 1; }
+.p2 {
+  transform: translate(-5dvw, -52dvh);
+}
+.pic2 { opacity: 0; }
+.pic2:nth-of-type(3) { opacity: 1; }
+.tbox1 {
+  animation-play-state: paused;
+  transform: translate(8dvw, -1dvh);
+  font-size: 18px;
+}
+.tbox2 {
+  width: 600px;
+  transform: translate(-42dvw, -53dvh);
+}
+.lbox1 {
+  width: 210px;
+  transform: translate(15dvw, -30dvh);
+}
+.lbox2 {
+  width: 210px;
+  transform: translate(-1dvw, -1dvh);
+}
+.goclassroom {
+  visibility: visible;
+  opacity: 1;
+}
+button.bclassroom { 
+  background-color: lightgray;
+  color: var(--color);
+  scale: 0.9;
+}
+button.bclassroom:hover {
+  scale: 1.1;
+  background-color: white;
+  border-color: gray;
+  border-width: 3px;
+  color: var(--color);
+}

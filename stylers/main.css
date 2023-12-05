@@ -1,0 +1,461 @@
+body {
+    overflow: hidden;
+    background: cornflowerblue;
+    margin: auto;
+    font-family: Tahoma Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.mainwrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(217deg, rgb(12, 12, 75), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgb(89, 2, 89), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgb(47, 10, 110), rgba(0,0,255,0) 70.71%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 2px black;
+    perspective: 10000px;
+}
+
+.mainwrap::before {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    background: linear-gradient(217deg, rgb(45, 242, 219), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgb(70, 96, 144), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgb(6, 114, 124), rgba(0,0,255,0) 70.71%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+    animation: mold 15s linear infinite;
+}
+
+.bgchurch::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(217deg, orange, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, goldenrod, rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgb(255, 40, 76), rgba(0,0,255,0) 70.71%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+.bgchurch::after {
+    position: absolute;
+    content: "CHURCH";
+    top: 3dvh;
+    left: 1dvw;
+    font-family: Tahoma;
+    font-weight: 700;
+    color: white;
+    font-size:100px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.bgclassroom::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(217deg, darkgreen, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgb(255, 223, 141), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgb(144, 187, 96), rgba(0,0,255,0) 70.71%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.bgclassroom::after {
+    position: absolute;
+    content: "CLASSROOM";
+    top: 70dvh;
+    left: 0;
+    font-family: Tahoma;
+    font-weight: 700;
+    color: white;
+    font-size:100px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.bgcommunity::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(217deg, blue, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgb(52, 212, 233), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgb(238, 164, 205), rgba(0,0,255,0) 70.71%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.bgcommunity::after {
+    position: absolute;
+    content: "COMMUNITY";
+    top: 70dvh;
+    left: 55dvw;
+    font-family: Tahoma;
+    font-weight: 700;
+    color: white;
+    font-size:100px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.bgculture::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(217deg, red, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, blue, rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, green, rgba(0,0,255,0) 70.71%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.bgculture::after {
+    position: absolute;
+    content: "CULTURE";
+    top: 70dvh;
+    left: 35dvw;
+    font-family: Tahoma;
+    font-weight: 700;
+    color: white;
+    font-size:100px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.bgcourt::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(217deg, rgb(7, 238, 173), rgba(5, 255, 138, 0) 70.71%),
+                linear-gradient(127deg, rgb(23, 160, 144), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgb(0, 255, 17), rgba(0,0,255,0) 70.71%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.bgcourt::after {
+    position: absolute;
+    content: "COURT";
+    top: 3dvh;
+    left: 75dvw;
+    font-family: Tahoma;
+    font-weight: 700;
+    color: white;
+    font-size:100px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.btnwrap {
+    position: absolute;
+    border: min(calc(40dvw / 600), calc(600px / 600)) solid white;
+    border-radius: min(calc(40dvw / 20), calc(600px / 20));
+    width: min(40dvw, 600px);
+    height: min(14dvh, 100px);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: min(calc(40dvw / 60), calc(600px / 60));
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: linear-gradient(217deg, rgba(0,217,217,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(217,217,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(217,0,217,.8), rgba(0,0,255,0) 70.71%);
+}
+.btnwrap > button {
+    height: min(7dvh, 50px);
+    width: min(calc(40dvw / 6), calc(600px / 6));
+    background: transparent;
+    border: min(calc(40dvw / 600), calc(600px / 600)) solid white;
+    border-radius: min(calc(40dvw / 30), calc(600px / 30));
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-size: min(calc(2dvh - 1px), 16px);
+}
+.btnwrap > button:hover {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: white;
+    scale: 1.15;
+    color: var(--color);
+}
+.p1 {
+    position: absolute;
+    height: min(32dvh, 300px);
+    width: min(15dvw, 300px);
+    max-width: 1000px;
+    max-height: 1000px;
+    border-radius: 20px;
+    /* border: 2px solid white; */
+    top: clamp(1dvh, 5dvh, 25dvh);
+    overflow: hidden;
+}
+
+.p2 {
+    position: absolute;
+    height: min(32dvh, 300px);
+    width: min(15dvw, 300px);
+    /* border: 2px solid white; */
+    border-radius: min(calc(15dvw / 15), calc(300px / 15));
+    top: 60dvh;
+    left: 15dvw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.tbox1 {
+    position: absolute;
+    height: min(23dvh, 160px);
+    width: min(33dvw, 540px);
+    /* border: 2px solid white; */
+    top: 68dvh;
+    background-color: rgba(255, 255, 255, 0.6); /* rgb(205, 203, 203, 0.6); */
+    text-shadow: 1px 1px 2px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: min(calc(23dvh / 16 - 2px), 7px);
+    border-radius: min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18)) min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18));
+    font-weight: bold;
+    font-size: min(calc(23dvh / 10), calc(160px / 10));
+    align-items: center;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+}
+.tbox2 {
+    display: flex;
+    position: absolute;
+    height: min(27dvh, 200px);
+    width: min(14dvw, 200px);
+    /* border: 2px solid white; */
+    top: 65dvh;
+    left: 70dvw;
+    background-color: rgba(255, 255, 255, 0.6); /* rgb(205, 203, 203, 0.6); */
+    text-shadow: 1px 1px 2px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+    border-radius: min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18)) min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18));
+    font-weight: bold;
+    font-size: 13.5px;
+    align-items: center;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+}
+.lbox1 {
+    position: absolute;
+    height: min(2dvh, 15px);
+    width: min(20dvw, 400px);
+    /* border: 2px solid black; */
+    top: 94dvh;
+    text-align: center;
+    color: white;
+    font-family: tahoma;
+    font-size: min(2dvh, 16px);
+}
+.lbox2 {
+    position: absolute;
+    height: min(2dvh, 15px);
+    width: min(28dvw, 500px);
+    /* border: 2px solid black; */
+    top: 64dvh;
+    text-align: center;
+    color: white;
+    font-family: tahoma;
+    font-size: min(2dvh, 16px);
+}
+.btnbox {
+    position: absolute;
+    height: min(4dvh, 25px);
+    width: min(8dvw, 130px);
+    border: min(calc(8dvw / 65), calc(130px / 65)) solid white;
+    background: linear-gradient(217deg, rgba(7, 85, 85, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(99, 99, 18, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(120, 14, 120, 0.8), rgba(0,0,255,0) 70.71%);
+    top: 57dvh;
+    border-radius: min(4dvh, 25px);
+    color: white;
+    text-align: center;
+    font-size: min(3dvh, 18px);
+    font-family: tahoma;
+    font-weight: 550;
+}
+.btnwrap::before {
+    content: "";
+    position: absolute;
+    border: 1px solid white;
+    border-radius: min(calc(40dvw / 20), calc(600px / 20));
+    width: min(40dvw, 600px);
+    height: min(14dvh, 100px);
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: linear-gradient(336deg, rgba(217,217,0,1), rgba(0,0,255,0) 70.71%), 
+                linear-gradient(127deg, rgba(0, 217,217,1), rgba(0,255,0,0) 70.71%),
+                linear-gradient(217deg, rgba(217,0, 217,1), rgba(255,0,0,0) 70.71%);
+    opacity: 0;
+    z-index: -2;
+    animation: mold 8s linear infinite;
+}
+@keyframes mold {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.btnbox:hover {
+    border-color: rgb(47, 10, 110);
+    background-color: white;
+    color: lightgoldenrodyellow;
+    scale: 1.15;
+    transition: all 0.2s ease-in-out;
+}
+.mainwrap > div {
+    transition: all 0.2s ease-in-out;
+}
+.mainwrap > a {
+    height: 50px;
+    width: 70px;
+    background: transparent;
+    border: 4px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: tahoma;
+    font-weight: 550;
+    position: absolute;
+    text-decoration: none;
+}
+.mainwrap > a:hover {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: white;
+    color: black;
+    /* scale: 1.30; */
+    width: 150px;
+}
+.gochurch {
+    left: 10dvw;
+    top: 20dvh;
+    visibility: hidden;
+    opacity: 0;
+}
+.goclassroom {
+    left: 15dvw;
+    top: 65dvh;
+    visibility: hidden;
+    opacity: 0;
+}
+.goculture {
+    top: 85dvh;
+    visibility: hidden;
+    opacity: 0;
+}
+.gocommunity {
+    top: 65dvh;
+    left: 75dvw;
+    visibility: hidden;
+    opacity: 0;
+}
+.gocourt {
+    left: 85dvw;
+    top: 20dvh;
+    visibility: hidden;
+    opacity: 0;
+}
+#preloader {
+    margin: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    background-color: rgb(251, 100, 193);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 0;
+    animation: deload 4s forwards;
+}
+
+@keyframes deload {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    89% {
+        opacity: 0;
+    }
+    100% {
+        z-index: -3;
+    }
+}
+
+.pic1 {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    scale: 1.2;
+}
+
+.pic2 {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    scale: 1.2;
+}
+
+.pic1:first-of-type {
+    scale: 1;
+    opacity: 1;
+}
+
+.pic2:first-of-type {
+    opacity: 1;
+    scale: 1;
+}

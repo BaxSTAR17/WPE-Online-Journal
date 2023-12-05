@@ -1,0 +1,15 @@
+.bgchurch::before { 
+    opacity: 0; 
+} 
+.bgclassroom::before { 
+    opacity: 0; 
+} 
+.bgcommunity::before { 
+    opacity: 0; 
+} 
+.bgculture::before { 
+    opacity: 0; 
+} 
+.bgcourt::before { 
+    opacity: 0; 
+}

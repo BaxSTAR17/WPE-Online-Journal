@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.mainwrap {
+    background: linear-gradient(70deg, red, transparent), 
+                linear-gradient(130deg, blue, transparent),
+                linear-gradient(200deg, green, transparent),
+                linear-gradient(360deg, teal, transparent),
+                linear-gradient(180deg, aquamarine, transparent);
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainwrap:before {
+    background: linear-gradient(70deg, blue, transparent), 
+                linear-gradient(130deg, green, transparent),
+                linear-gradient(200deg, aquamarine, transparent),
+                linear-gradient(360deg, red, transparent),
+                linear-gradient(180deg, teal, transparent);
+    width: 100dvw;
+    height: 100dvh;
+    border: 2px dashed black;
+    position: absolute;
+    content: "";
+    opacity: 0;
+    animation: fade 17s linear infinite;
+}
+
+.backdrop {
+    background: linear-gradient(70deg, green, transparent), 
+                linear-gradient(130deg, red, transparent),
+                linear-gradient(200deg, aquamarine, transparent),
+                linear-gradient(360deg, blue, transparent),
+                linear-gradient(180deg, teal, transparent);
+    width: 100dvw;
+    height: 100dvh;
+    border: 2px dashed black;
+    position: absolute;
+    content: "";
+    opacity: 0;
+    animation: fade 24s linear infinite;
+    z-index: 0;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+input {
+    display: none;
+}
+
+.deckholder {
+    width: 95dvw;
+    height: 240dvh;
+    /* border: 2px solid black; */
+    top: 20dvh;
+    animation: rotateUp 0.9s ease-in-out;
+    display: flex;
+    justify-content: center;
+    transform-origin: calc(95dvw / 2) calc(240dvh / 2);
+    transition: all 1s ease-in-out;
+}
+
+.mainwrap:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 9dvh;
+    z-index: 1;
+    border-top: 50px solid white;
+    border-bottom: 0px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    animation: bounce 0.7s ease-in-out 0s infinite alternate;
+    transition: all 0.2s ease-in-out;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(4px);
+    }
+    to {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes rotateUp {
+    from {
+        top: 100dvh;
+        rotate: 90deg;
+    }
+    to {
+        top: 20dvh;
+        rotate: 0deg;
+    }
+}
+
+.card {
+    background-image: var(--path);
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 450px;
+    width: 320px;
+    --cardw: 320px;
+    --cardh: 450px;
+    transform-origin: 160px 120dvh;
+    rotate: calc(45deg * var(--order));    
+    border: 1px solid black;
+    box-shadow: 3px 3px 8px black;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    top: 90dvh;
+}
+
+label {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    font-family: tahoma;
+    font-weight: bold;
+}
+
+#one:checked ~ .labelholder .one {
+    width: 30px;
+}
+
+#two:checked ~ .labelholder .two {
+    width: 30px;
+}
+
+#three:checked ~ .labelholder .three {
+    width: 30px;
+}
+
+#four:checked ~ .labelholder .four {
+    width: 30px;
+}
+
+#five:checked ~ .labelholder .five {
+    width: 30px;
+}
+
+#six:checked ~ .labelholder .six {
+    width: 30px;
+}
+
+#seven:checked ~ .labelholder .seven {
+    width: 30px;
+}
+
+#eight:checked ~ .labelholder .eight {
+    width: 30px;
+}
+
+#one:checked ~ .deckholder{
+    rotate: calc(45deg * 0);
+}
+
+#two:checked ~ .deckholder{
+    rotate: calc(45deg * -1);
+    
+}
+
+#three:checked ~ .deckholder{
+    rotate: calc(45deg * -2);
+}
+
+#four:checked ~ .deckholder{
+    rotate: calc(45deg * -3);
+}
+
+#five:checked ~ .deckholder{
+    rotate: calc(45deg * -4);
+}
+
+#six:checked ~ .deckholder{
+    rotate: calc(45deg * -5);
+}
+
+#seven:checked ~ .deckholder{
+    rotate: calc(45deg * -6);
+}
+
+#eight:checked ~ .deckholder{
+    rotate: calc(45deg * -7);
+}
+
+.arrowholder {
+    font-family: tahoma;
+    font-weight: bolder;
+    color:white;
+    -webkit-text-stroke: 2px black;
+    top: 85dvh;
+    font-size: 25px;
+}
+
+.arrows {
+    font-size: 120px;
+    top: 35dvh;
+    animation: portrude 1s ease-in-out 0s infinite alternate;
+    transition: all 0.2s ease-in-out;
+}
+
+.left {
+    left: 2dvw;
+}
+
+.right {
+    right: 2dvw;
+}
+
+.arrows:hover {
+    scale: 1.2;
+    color: gray;
+}
+
+@keyframes portrude {
+    from { scale: 1 }
+    to { scale: 1.2 }
+}
+
+.arrows:active {
+    color: silver;
+    -webkit-text-stroke: 4px black;
+}
+
+.left:active {
+    transform: translateX(-1dvw);
+}
+
+.right:active {
+    transform: translateX(1dvw);
+}
+
+label:hover {
+    font-size: 18px;
+}
+
+.hovery:hover {
+    scale: 1.04;
+}
+
+.backbtn {
+    top: 2dvh;
+    left: calc(50dvw - 45px);
+    height: 25px;
+    width: 90px;
+    border: 2px solid white;
+    background: linear-gradient(217deg, rgba(7, 85, 85, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(99, 99, 18, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(120, 14, 120, 0.8), rgba(0,0,255,0) 70.71%);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: tahoma;
+    font-weight: 550;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+}
+
+.backbtn:hover {
+    scale: 1.54;
+    border-color: yellow;
+    color: yellow;
+}
+
+.flipped {
+    transform: rotateY(-180deg) scaleX(3) scaleY(1.2) translateY(20dvh);
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 2px 0px 0 black, -2px 0px 0 black, 0px -2px 0 black, 0px 2px 0 black;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+.flipped:after {
+    content: ">> CLICK THE CARD AGAIN TO EXIT OUT OF THE ENTRY <<";
+    font-weight: bold;
+    font-family: tahoma;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 800px;
+    rotate: y 180deg;
+    scale: 0.4 1;
+    animation: bounce 0.7s ease-in-out 0s infinite alternate;
+    transition: all 0.2s ease-in-out;
+}
+
+.flipped:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(9px);
+}
+
+.paragraph {
+    display: none;
+} 
+
+.pstyle1 {
+    display: block;
+    transform: rotateY(180deg) scaleX(0.4) scaleY(1) translateY(0dvh);
+    text-align: justify;
+    text-indent: 20px;
+    width: 650px;
+    height: 200px;
+    font-size: 12px;
+}
+
+.frame {
+    width: 250px;
+    height: 240px;
+    border: 10px inset burlywood;
+    position: absolute;
+    box-shadow: 3px 3px 6px black;
+    background-image: url(./images/black.JPG);
+    align-self: baseline;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    transition: all 0.2s ease-in-out;
+}
+
+.fleft {
+    left: 1dvw;
+}
+
+.fright {
+    right: 1dvw;
+}

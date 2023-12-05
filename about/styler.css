@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+}
+
+.mainwrap {
+    width: 100%;
+    background: linear-gradient(0deg, darkblue, darkcyan, navy, transparent),
+                linear-gradient(90deg, indigo, transparent),
+                linear-gradient(180deg, purple, transparent),
+                linear-gradient(70deg, darkslateblue, transparent),
+                linear-gradient(90deg, darkcyan, transparent),
+                linear-gradient(180deg, pink, transparent),
+                radial-gradient(indigo, violet),
+                linear-gradient(270deg, teal, transparent);
+    height: 700dvh;
+}
+
+.backdrop {
+    color: white;
+    font-size: 70px;
+    font-family: tahoma;
+    animation: posting 0.8s ease-in-out;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+.filter {
+    opacity: 0.3;
+    filter: blur(5px);
+    position: sticky;
+}
+
+@keyframes posting {
+    0% {
+        scale: 0;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+.constellate {
+    position: absolute;
+    scale: 1;
+    transform-origin: 50% 50%;
+    transition: all 1s ease-in-out;
+}
+
+.one {
+    top: calc(110dvh + 20px);
+    rotate: 180deg;
+    left: 190px;
+}
+
+.two {
+    top: calc(110dvh + 1177px);
+    rotate: 270deg;
+    left: 1000px;
+    scale: 0.8;
+}
+
+.three {
+    top: calc(110dvh + 2728px);
+    rotate: 270deg;
+    left: 550px;
+    scale: 1.2;
+}
+
+.constie {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+
+.rotateShow {
+    rotate: 0deg;
+    opacity: 1;
+}
+
+.star {
+    height: 450px;
+    width: 470px;
+    background-image: url(./images/star.png);
+    background-size: cover;
+}
+
+.constellator {
+    background-color: white;
+    width: 765px;
+    height: 8px;
+    transform: scaleX(0);
+    position: absolute;
+    transform-origin: 0% 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+.constellator:nth-of-type(1) {
+    top: calc(110dvh + 288px);
+    left: 500px;
+    rotate: 20deg;
+}
+
+.constellator:nth-of-type(2) {
+    top: calc(110dvh + 550px);
+    left: 1220px;
+    rotate: 95deg;
+}
+
+.constellator:nth-of-type(3) {
+    top: calc(110dvh + 1320px);
+    left: 1159px;
+    rotate: 50deg;
+    width: 80px;
+}
+
+.constellator:nth-of-type(4) {
+    top: calc(110dvh + 1415px);
+    left: 300px;
+    rotate: -22deg;
+    width: 930px;
+    transform-origin: 100% 50%;
+}
+
+.constellator:nth-of-type(5) {
+    top: calc(110dvh + 1770px);
+    left: -575px;
+    rotate: 274deg;
+    width: 930px;
+    transform-origin: 100% 50%;
+}
+
+.constellator:nth-of-type(6) {
+    top: calc(110dvh + 2707px);
+    left: -240px;
+    rotate: calc(22deg + 180deg);
+    width: 530px;
+    transform-origin: 100% 50%;
+}
+
+.stretchShow {
+    transform: scaleX(1);
+}
+
+.scaled {
+    scale: var(--size);
+}
+
+.a {
+    top: calc(110dvh + 330px);
+    left: 990px;
+    rotate: 21deg;
+}
+
+.b {
+    top: calc(110dvh + 1090px);
+    left: 920px;
+    rotate: 10deg; 
+}
+
+.c {
+    top: calc(110dvh + 1545px);
+    left: 125px;
+    rotate: 10deg; 
+}
+
+.d {
+    top: calc(110dvh + 2480px);
+    left: 58px;
+    rotate: 10deg;  
+}
+
+.spinShow {
+    opacity: 1;
+    rotate: calc(370deg * 3);
+}
+
+.backbtn {
+    position: sticky;
+    top: 5%;
+    left: 5%;
+    height: 25px;
+    width: 90px;
+    border: 2px solid white;
+    background: linear-gradient(217deg, rgba(7, 85, 85, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(99, 99, 18, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(120, 14, 120, 0.8), rgba(0,0,255,0) 70.71%);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: tahoma;
+    font-weight: 550;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.backbtn:hover {
+    scale: 1.54;
+    border-color: yellow;
+    color: yellow;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+    background: linear-gradient(0deg, darkblue, darkcyan, navy, transparent),
+                linear-gradient(90deg, indigo, transparent),
+                linear-gradient(180deg, purple, transparent),
+                linear-gradient(70deg, darkslateblue, transparent),
+                linear-gradient(90deg, darkcyan, transparent),
+                linear-gradient(180deg, pink, transparent),
+                radial-gradient(indigo, violet),
+                linear-gradient(270deg, teal, transparent); 
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 25px;
+    margin-block: 0.1em;
+    background: linear-gradient(darkcyan, rgb(1, 131, 131), rgb(1, 79, 79));
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid white;
+    background: linear-gradient(217deg, rgb(12, 147, 147), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgb(220, 220, 24), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(120, 14, 120, 1), rgba(0,0,255,0) 70.71%);
+    border-radius: 25px;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-color: yellow;
+    background: linear-gradient(217deg, rgba(120, 14, 120, 0.5), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgb(220, 220, 24, 0.5), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(21, 12, 147, 0.5), rgba(0,0,255,0) 70.71%);
+    scale: 1.1;
+}
+
