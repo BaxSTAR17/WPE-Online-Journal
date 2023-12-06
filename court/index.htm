@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COURT</title>
     <link rel="stylesheet" href="./styler.css">
+    <script defer src="./scripter.js"></script>
 </head>
 <body>
     <section class="mainwrap">
@@ -30,9 +31,79 @@
             </div>
         </div>
         <div class="absolute field b" style="--color: blue"></div>
-        <div class="absolute field c" style="--color: orange"></div>
-        <div class="absolute field d" style="--color: green"></div>
-        <div class="absolute field e" style="--color: darkgoldenrod"></div>
+        <div class="absolute field c" style="--color: orange">
+            <div class="choices feud">
+                <div class="select choice1 selected" onclick="selectChoice(this, document.querySelector('.answer1'))">PARAGRAPH 1</div>
+                <div class="select choice2" onclick="selectChoice(this, document.querySelector('.answer2'))">PARAGRAPH 2</div>
+                <div class="select choice3" onclick="selectChoice(this, document.querySelector('.answer3'))">PARAGRAPH 3</div>
+                <div class="select choice4" onclick="selectChoice(this, document.querySelector('.answer4'))">PARAGRAPH 4</div>
+            </div>
+            <div class="answer feud">
+                <p class="ans answer1">
+                    The DOST Family Feud is another event held during Hiabalag Season on August 26, 2023, 3:00 PM at the Hibalag grounds. In this event, different students from any course in Silliman University battle it out in a quizbee that works just like Family Feud with questions relating to school, college, Silliman and more. I was able to still watch most of the entirety of the event and be a part of the audience but some of us viewers had to watch from within shelter or shade cuz the ground was muddy and it was drizzling so we could only watch the event from afar.
+                </p>
+                <p class="ans answer2">
+                    The event was very intriguing as its questions were interesting and they made me think very hard as well. While I was watching the event, I was also surprised by the fact that some of my friends that are in the same batch and college as me also decided to join and participate in the sport. The highlight of the event were definitely the final rounds as it was getting intense but I also had to be excused for practices and other matters I had to go to.
+                </p>
+                <p class="ans answer3">
+                    The event gave me a lot of insights about its questions and results as it can teach you about a lot of things you may not know about on different topics and how people think differently and have varying preferences on certain situations. The activity also supported and gave importance to teamwork a lot as the participants have to play in teams as they answer the questions and score their best.
+                </p>
+                <p class="ans answer4">
+                    Because of this event, I am more aware of the tiniest facts and information shown in the activity through proven data.
+                </p>
+            </div>
+        </div>
+        <div class="absolute field d" style="--color: green">
+            <div class="grasslandwrap">
+                <div class="grass square1">
+                    <div class="goal picone"></div>
+                    <article class="goalkeeper">
+                        <p class="goalkeeps goalie1">
+                            The SCUAA Football Match is a football competition between universities organized by the State College University Athletic Association or SCUAA on September 13, 2023, at the Cimafranca Ballfield of Sillima University. Football, or most commonly called as soccer on other places, is a sport played on an open field with two teams that will try to aim and hit the ball onto the opposing goal to score a point. Usually, passing, stealing, guiding, hitting and shooting the ball is through kicking and footwork but hitting the ball with the chest and the head is also allowed in the sport.
+                        </p>
+                        <p class="goalkeeps goalie2">
+                            The competition was great and overall intriguing as there were a lot of clutch portions and close shots that made the event all the more tense and exciting which made me enjoy the activity a lot. The activity surprised me at first when I saw that the players are trained and supported to hit the ball with their heads and they even practice by passing the ball with their heads as their training from time to time.
+                        </p>
+                    </article>
+                </div>
+                <div class="grass square2">
+                    <article class="goalkeeper">
+                        <p class="goalkeeps goalie3">
+                            When I got to watch the competition, the match was already in favor of a team that got very great teamwork and cooperation as their coordination with one another was satisfying to see. Unfortunately, it was hard to admit that the only reason why they're ahead a lot in the competition was because the opposing team had very weak teamwork as I have observed and as I see this contrast of team synergies, it taught me the importance of teamwork more and more.
+                        </p>
+                        <p class="goalkeeps goalie4">
+                            Because of this match, I am more interested in the sport of football and its approach to strong teamwork and coordination with your peers.
+                        </p>
+                    </article>
+                    <div class="goal pictwo"></div>
+                </div>
+                <div class="centergrass">
+                
+                </div>
+            </div>
+        </div>
+        <div class="absolute field e" style="--color: darkslategray">
+            <div class="paragraph belt yellow">
+                <p class="belter">
+                    The NORSU Karate Competition is a karate match organized by the Negros Oriental State University or NORSU on October 22, 2023, 9:00 AM at the NORSU Gymnasium. The goal of this event is to empower and enhance the participants' karate prowess and how they perform it towards or against their peers. Even though I am not a student of NORSU, I was still able to watch this competition and watch the participants train their best.
+                </p>
+            </div>
+            <div class="paragraph belt purple">
+                <p class="belter">
+                    The activity was great to see in action as it also reminded me of the time where I had taekwondo lessons back then, the difference is this competition is about karate but nonetheless, I was able to pinpoint similarities especially on how they warm up and practice and it felt like a good throwback.
+                </p>
+            </div>
+            <div class="paragraph belt green">
+                <p class="belter">
+                    The competition gave me a realization on how a lot of the participants take a lot of time and effort for this. Even though they grow tired, I can still see their perseverance and determination which is a great representation of their sheer will. If there was a chance I could watch another karate match while some of the participants are still practicing, I would take that opportunity.
+                </p>
+            </div>
+            <div class="paragraph belt black">
+                <p class="belter">
+                    Because of this competition, I am more determined and inspired by the strength and skills of the participants in the match.
+                </p>
+            </div>
+        </div>
         <div class="absolute field f" style="--color: purple"></div>
         <div class="absolute field g" style="--color: rosybrown"></div>
         <div class="absolute labelholder">
@@ -40,7 +111,7 @@
             <label for="two" class="two" style="--color: blue">2</label>
             <label for="three" class="three" style="--color: orange">3</label>
             <label for="four" class="four" style="--color: green">4</label>
-            <label for="five" class="five" style="--color: darkgoldenrod">5</label>
+            <label for="five" class="five" style="--color: darkslategray">5</label>
             <label for="six" class="six" style="--color: purple">6</label>
             <label for="seven" class="seven" style="--color: rosybrown">7</label>
         </div>

@@ -3,7 +3,7 @@
 
 	My expectations for this event were met as the swimmers swam really well, I even got to take a video of someone that swam from the start to the end in just around 10 seconds and that’s a great record already. The activity surprised me on how much swimmers were swimming throughout the whole event, it felt like the contestants were never ending as countless of them swim on the pool. The event showcased one of the best swimmers in my eyes and that is the highlight for me in this event.
 
-	This event encouraged me to train more in swimming and try harder as I am not a good swimmer myself. I failed my swimming classes before when I was still young but seeing this competition, it has given me a new insight that I should try to go back into swimming again. You can say that the contestants really inspired me with their swimming prowess, skills, and motivation to keep on swimming until the end even if they couldn’t hold their breath for long.
+	This event encouraged me to train more in swimming and try harder as I am not a good swimmer myself. I failed my swimmi6ng classes before when I was still young but seeing this competition, it has given me a new insight that I should try to go back into swimming again. You can say that the contestants really inspired me with their swimming prowess, skills, and motivation to keep on swimming until the end even if they couldn’t hold their breath for long.
 
 	Because of this event, I am more encouraged and intrigued to go back into swimming as I got inspired by their determination to swim until the finish line.
 
