@@ -187,6 +187,7 @@ label:hover {
 }
 
 .paragraph {
+    position: absolute;
     left: 52dvw;
 }
 
@@ -327,7 +328,7 @@ p {
     top: 30dvh;
 }
 
-.c, .d, .e {
+.c, .d, .e, .f {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -432,7 +433,7 @@ p {
 .grass {
     border: 4px solid white;
     width: calc(1250px / 2);
-    height: 550px;
+    height: 650px;
     display: flex;
     align-items: center;
 }
@@ -453,6 +454,11 @@ p {
     border: 5px solid white;
     top: calc((550px / 2) - 25px);
     left: calc((1250px / 2) - 25px);
+}
+
+.basketball .centergrass {
+    top: calc((650px / 2) - 25px);
+    left: calc((1250px / 2) - 18px);
 }
 
 .goal {
@@ -500,4 +506,74 @@ p {
 
 .green {
     background: linear-gradient(90deg, lime, green, green, green, green, green, green, green, green, green, lime);
+}
+
+.basketball .picone {
+    width: 400px;
+    border-radius: 0px 150px 150px 0px;
+}
+
+.basketball .pictwo {
+    width: 400px;
+    border-radius: 150px 0px 0px 150px;
+}
+
+.basketball {
+    margin-left: 68dvw;
+    margin-top: 17dvh;
+    rotate: 90deg;
+}
+
+ .basketball .goalkeeper {
+    display: flex;
+    flex-direction: row;
+    width: 1010px;
+    gap: 0;
+
+ }
+
+ .basketball .goalkeeps {
+    rotate: -90deg; 
+    margin: 0;
+    width: 650px;
+    font-size: 17px;
+}
+
+.court {
+    scale: 0.8;
+}
+
+.g {
+    perspective: 1000px;
+}
+
+.net {
+    border: 2px solid white;
+    width: 500px;
+    height: 100px;
+    left: 83dvw;
+    top: 70dvh;
+    transform: rotateY(-75deg);
+    color: white;
+}
+
+.net:before {
+    content: "";
+    position: absolute;
+    border: 5px solid white;
+    height: 300px;
+}
+
+.net:after {
+    content: "";
+    position: absolute;
+    border: 5px solid white;
+    height: 300px;
+    left: 500px;
+}
+
+.net span {
+    position: absolute;
+    top: -35px;
+    font-size: 145px;
 }
