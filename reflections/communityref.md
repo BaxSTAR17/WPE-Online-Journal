@@ -34,14 +34,15 @@ This event alone can teach us and influence us to explore and unravel more of ou
 
 Because of this event, I am further determined to give more attention to local products and even promote these to other people especially of my own country.
 
-<!-- #               VIGIL THEATRICAL PLAY>
-
-
 <!-- #               THANKSGIVING DAY CELEBRATION>
+The Annual American Thanksgiving Celebration organized by Silliman University and the SU International Student Center is an event to acknowledge thanksgiving and to engage and provide service to our fellow American friends and Alumni in the Silliman Community. It occurred on November 22, 2023, , 9:00 AM at the Silliman University Library (Gym). The spealers were Dr. Rozzano Locsin and Rev. Jonathan R. Pia and their audience were us Sillimanians, the International students and the alumnis of Silliman. 
 
+The activity helped us embrace the foreign holiday of Thanksgiving and helping us connect and unite with our fellow American Students and Silliman Alumnis through paying tribute to them with this event especially through genuine messages and service.
 
 <!-- #               SPONSOR'S CORNER>
+The Sponsor's Corner
 
-
-<!-- ! UNDONE EVENT, WILL BE DONE BY DECEMBER 6>
 <!-- #               PEP OUTREACH THING (UNNAMED)>
+
+
+<!-- #               GE10 STO. NINO ORPHANAGE WHITE GIFT DONATION>
