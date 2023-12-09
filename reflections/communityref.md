@@ -37,12 +37,35 @@ Because of this event, I am further determined to give more attention to local p
 <!-- #               THANKSGIVING DAY CELEBRATION>
 The Annual American Thanksgiving Celebration organized by Silliman University and the SU International Student Center is an event to acknowledge thanksgiving and to engage and provide service to our fellow American friends and Alumni in the Silliman Community. It occurred on November 22, 2023, , 9:00 AM at the Silliman University Library (Gym). The spealers were Dr. Rozzano Locsin and Rev. Jonathan R. Pia and their audience were us Sillimanians, the International students and the alumnis of Silliman. 
 
-The activity helped us embrace the foreign holiday of Thanksgiving and helping us connect and unite with our fellow American Students and Silliman Alumnis through paying tribute to them with this event especially through genuine messages and service.
+The activity helped us embrace the foreign holiday of Thanksgiving and helping us connect and unite with our fellow American Students and Silliman Alumnis through paying tribute to them with this event especially through genuine messages, service and especially through eating a bountiful meal with them all. The best parts of this event were definitely the short Sillimanian games and trivia that helped strengthen our bond even more.
+
+The event made us students realize the importance and essence of Thanksgiving despite it not being celebrated in the Philippines and that is it helps connect and unite us all and also helps us to become thankful for the many blessings that came and has yet to come for all of us. Because of this event, we even got to collectively meet other alumnis more and american sillimanians which helps us to become more open and welcoming to them.
+
+Because of this celebration, I am able to experience community engagement activities with my fellow American Sillimanians and Alumnis which strengthens our bond.
 
 <!-- #               SPONSOR'S CORNER>
-The Sponsor's Corner
+The Sponsor's Corner is a fundraising event organized by the freshmen ROTC Sponsors to financially help the less fortunate and poverty by gaining funds through selling affordable and simple treats and snacks to Silliman students. This event was held on November 23, 2023, 8:00 AM at the Ausejo Hall Nature Area and went on until December 7, 2023. As a member of the HQ company in ROTC, I wanted to support our sponsors and bought our favorite snacks from them to help a cause.
 
-<!-- #               PEP OUTREACH THING (UNNAMED)>
+I really love how they accomodate their customers and how good the quality of their simple snacks are. I was also very satisfied of their menu as it contains my favorite sweets, treats and drinks like Blue Lemonade, Mango Tapioca, Macaroons and even Crinkles and I believe that's what made their corner very special from other stores. The only sad part is the fact that there would be times that some treats would be sold out already just like the Crinkles.
 
+Even though the event got to give me good food and drinks, it still gave me happiness and relief that through paying for these treats, I got to help out for a cause and I got to contribute for the sake of others. With this, I am further motivated to do more with the smallest of actions just like with this one to help for the greater good and that's the best benefit I gained from this event.
+
+Because of this event, I got to help the less fortunate in many more ways than one because this activity gave me the opportunity to do so.
+
+<!-- #               PEP CHRISTMAS OUTREACH>
+The PEP Christmas Outreach is a Fellowship Sunrise Service and Gift-giving outreach event organized by the Guidance and Testing Division, Office of Student Services, and Silliman University to offer goods and sacks of rice to our fellow hardworking safety and security guards of Silliman University. This event occurred on December 6, 2023, 5:30 AM at the Amphitheatre. As a freshmen student that is part of the PEP section B6, me and my group were more than thankful to be able to have the chance to help buy rice and offer it to our fellow guards.
+
+The event started at the very early time of sunrise and a lot of us just woke up for this event, but nonetheless, the event started with a hopeful and spiritualistic start with the mass and the speaker's message that was impactful. The giving of rice to each and every security guard of SIlliman University was also very heartwarming as we can see their smiles very clearly once they receive the rice. The zumba dance portions were also a very entertaining part of the event.
+
+This sunrise service gave me the chance to help and care for our fellow security guards in return for their hard work to keep us safe. Because of this, we, PEP students, were able to collectively realize how we can connect to our security guards more and more with this event. The event even became more genuine as our group were the ones able to provide the rice and give it to the security guards ourselves and because of this, we are determined to do more like this.
+
+Because of this outreach, I become more motivated to give others meaningful gifts as my special way of saying thank you for this Christmas.
 
 <!-- #               GE10 STO. NINO ORPHANAGE WHITE GIFT DONATION>
+The Sto. Nino Orphanage White Gift Donation and Christmas Card Making is an event organized through our subject, GE10, to give us the chance to offer relief goods and necessities for the youth present in the Sto. Nino Orphanage and greet them a merry christmas. The white gift wrapping and christmas card making took place on December 6, 2023, 11:30 AM at the ATA Hall of the UCS Building. As a member of my group in GE10, me and my group were more than happy to be able to make christmas cards and white gifts for the youth at the Orphanage.
+
+As a member of the group, I was able to bring my contribution to the white gifts which were toothpaste, and also my contribution for the christmas card making which were providing scissors and coloring materials like markers. It was rather heartwarming and fun making as a group as we were cooperating with each other actively and we were able to laugh and smile together while doing so and that's what made this event memorable.
+
+After me and my group were done with the tasks and everything, I was able to realize how our chemistry and teamwork can lead us a long way and how it can even help out other people through our smallest efforts and sacrifices like providing them with sufficient goods and necessities that can help give them a spark of happiness and hope. This event even influenced us as a group to make our messages inside our christmas card as genuine as possible which helps us learn to be very genuine and loving.
+
+Because of this activity, I am more than satisfied with me and my group's work and how our hardwork would help the youth at the Orphanage live their lives with hope and knowledge that there are people that care for them dearly.

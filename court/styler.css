@@ -439,7 +439,7 @@ p {
     opacity: 0;
 }
 
-.pic1 {
+.abpic1 {
     opacity: 1;
 }
 
@@ -505,10 +505,6 @@ p {
      cursor: pointer;
 }
 
-.abilityico {
-
-}
-
 .feud {
     width: 1000px;
     height: 300px;
@@ -529,6 +525,16 @@ p {
     outline: solid 10px navy;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+}
+
+.feudpic{
+    width: 260px;
+    height: 260px;
+    rotate: 0deg;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px black;
 }
 
 .select {
@@ -635,6 +641,16 @@ p {
     width: 200px;
     height: 300px;
     border: 4px solid white;
+    background-size: cover;
+    background-position: center;
+}
+
+.picone {
+    background-image: url(./images/COURT/SCUAA\ Soccer\ Match/pic1.jpg);
+}
+
+.pictwo {
+    background-image: url(./images/COURT/SCUAA\ Soccer\ Match/pic2.jpg);
 }
 
 .goalkeeper {
@@ -646,9 +662,9 @@ p {
 }
 
 .belt {
-    width: 1200px;
+    width: 1000px;
     height: 100px;
-    margin: 20px;
+    margin: 5px;
     border-right: none;
 }
 
@@ -660,12 +676,26 @@ p {
     margin: 15px;
 }
 
+.karatepic {
+    width: 200px;
+    height: 550px;
+    background-image: url(./images/COURT/NORSU\ Karate\ Competition/pic1.jpg);
+    top: 15dvh;
+    background-size: cover;
+    background-position: center;
+}
+
+.kpic {
+    background-image: url(./images/COURT/NORSU\ Karate\ Competition/pic2.jpg);
+    left: 135dvw;
+}
+
 .black {
     background: linear-gradient(90deg, darkslategray, black, black, black, black, black, black, black, black, black, darkslategray);
 }
 
 .yellow {
-    background: linear-gradient(90deg, goldenrod, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, goldenrod);
+    background: linear-gradient(90deg, darkgoldenrod, gold, gold, gold, gold, gold, gold, gold, gold, gold, darkgoldenrod);
 }
 
 .purple {
@@ -711,12 +741,118 @@ p {
     background-color: rgba(69, 69, 69, 0.4);
 }
 
-.court {
-    scale: 0.8;
+.bbpic {
+    width: 250px;
+    height: 300px;
+    top: 10dvh;
+}
+
+.baller {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: darkorange;
+    border: 3px solid black;
+    top: 90dvh;
+    left: 75dvw;
+    z-index: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.baller:hover {
+    scale: 1.2;
+    cursor: pointer;
 }
 
 .g {
     perspective: 1000px;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translateY(0dvh) scale(1.1) rotate(0deg);
+        z-index: 1;
+    }
+    49% {
+        z-index: 1;
+    }
+    50% {
+        transform: translateY(-25dvh) scale(0.7) rotate(0.5turn);
+        z-index: 1;
+    }
+    70% {
+        z-index: -3;
+    }
+    100% {
+        transform: translateY(10dvh) scale(0.5) rotate(1turn);
+        z-index: -3;
+    }
+}
+
+@keyframes throw {
+    0% {
+        transform: translateY(0dvh) scale(1.1) rotate(0deg);
+        z-index: 1;
+    }
+    49% {
+        z-index: 1;
+    }
+    50% {
+        transform: translateY(-25dvh) scale(0.7) rotate(0.5turn);
+        z-index: 1;
+    }
+    70% {
+        z-index: -3;
+    }
+    100% {
+        transform: translateY(10dvh) scale(0.5) rotate(1turn);
+        z-index: -3;
+    }
+}
+
+@keyframes hooping {
+    from { transform: translateX(0); }
+    to { transform: translateX(75dvw); }
+}
+
+.baller span {
+    font-family: tahoma;
+    font-size: 112px;
+    text-align: center;
+    position: absolute;
+    top: -27px;
+    left: -5px;
+}
+
+.hoop {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background: radial-gradient(white, rgb(199, 83, 83), rgb(199, 83, 83), rgb(199, 83, 83));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 70dvh;
+    scale: 0.6;
+    animation: hooping 2s linear infinite alternate;
+}
+
+.strings {
+    margin-top: 30px;
+    width: 2px;
+    background-color: white;
+}
+
+.bbp2 {
+    left: 70dvw;
+}
+
+.bbp3 {
+    left: 88dvw;
+}
+
+.court {
+    scale: 0.8;
 }
 
 @keyframes floaty {
@@ -809,12 +945,22 @@ p {
     align-items: center;
     font-size: 18px;
     width: 40dvw;
-    height: 500px;
+    height: 620px;
     top: 70px;
+}
+
+.libero {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
 }
 
 .side p {
     margin: 20px;
+    background-color: rgba(69, 69, 69,0.5);
 }
 
 .team2 {
@@ -825,7 +971,7 @@ p {
     width: 120dvw;
     height: 120dvh;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
     background-size: 100%;
     background-image: var(--bgImg);
     transform-origin: center bottom;
@@ -834,4 +980,8 @@ p {
     border-radius: 10dvh;
     top: -20dvh;
     left: -10dvw;
+}
+
+.a {
+    background-position: center top;
 }
