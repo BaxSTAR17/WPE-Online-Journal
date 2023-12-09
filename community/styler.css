@@ -6,6 +6,20 @@ body {
     height: 100dvh;
     width: 100dvw;
     position: relative;
+    background: linear-gradient(135deg, skyblue, pink);
+}
+
+.mainwrap:before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/logo.png);
+    top: 2dvh;
+    left: 25dvw;
+    height: 450px;
+    width: 700px;
+    background-size: 99%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bgimage, .filter {
@@ -16,40 +30,54 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+.movieframe {
+    
+}
+
 .bgimage {
     background-size: cover;
 }
 
+.absolute {
+    position: absolute;
+}
+
 .a1 {
-    background-image: url(./images/A\ Brand\ New\ World\,\ Brand\ New\ Colors.jpg);
+    background-image: url(./images/thanksgivingmainpic.jpg);
+    background-position: center center;
 }
 
 .b1 {
-    background-image: url(./images/A\ Warrior\'s\ Fight.jpg);
+    background-image: url(./images/stoninomainpic.jpg);
+    background-position: center center;
 }
 
 .c1 {
-    background-image: url(./images/BAX\ Star\ End\ drop.png);
+    background-image: url(./images/tabomainpic.jpg);
+    background-position: center center;
 }
 
 .d1 {
-    background-image: url(./images/Spring\ Snow\ EC.jpg);
+    background-image: url(./images/signmainpic.jpg);
+    background-position: center center;
 }
 
 .e1 {
-    background-image: url(./images/SUMMER\ SUMMER.jpg);
+    background-image: url(./images/aestheticmainpic.jpg);
 }
 
 .f1 {
-    background-image: url(./images/The\ Cure.jpg);
+    background-image: url(./images/muralmainpic.jpg);
+    background-position: center center;
 }
 
 .g1 {
-    background-image: url(./images/The\ Wonder\ Tree\ SONG.jpg);
+    background-image: url(./images/pepmainpic.jpg);
+    background-position: center center;
 }
 
 .ha1 {
-    background-image: url(./images/TURTLE\ EC\ Lyric\ Card.png);
+    background-image: url(./images/sponsorsmainpic.jpg);
 }
 
 .a2 {
@@ -57,7 +85,7 @@ body {
 }
 
 .b2 {
-    background: linear-gradient(transparent, darkblue);
+    background: linear-gradient(transparent, burlywood);
 }
 
 .c2 {
@@ -77,7 +105,7 @@ body {
 }
 
 .g2 {
-    background: linear-gradient(transparent, darkviolet);
+    background: linear-gradient(transparent, green);
 }
 
 .ha2 {
@@ -228,4 +256,123 @@ body {
 
 input {
     display: none;
+}
+
+.moviepicture {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    scale: 2;
+    background-image: var(--img);
+    top: 18dvh;
+    left: 18dvw;
+    box-shadow: 4px 4px 6px black;
+    border: 3px inset var(--color);
+    background-color: var(--color);
+    transition: all 0.4s ease-in-out;
+    perspective: 1000px;
+}
+
+.moviedesc {
+    background-color: rgba(69, 69, 69, 0.7);
+    color: white;
+    font-family: tahoma;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: justify;
+    text-indent: 20px;
+    width: 600px;
+    height: 280px;
+    top: 10dvh;
+    left: 50dvw;
+    z-index: 10;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.moviedesc::-webkit-scrollbar {
+    background-color: darkgray;
+    border-radius: 17px;
+}
+
+.moviedesc::-webkit-scrollbar-thumb {
+    border-radius: 17px;
+    background: radial-gradient(white, var(--color));
+    border: 2px solid var(--color);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.moviedesc::-webkit-scrollbar-track {
+    width: 17px;
+    background: linear-gradient(gray, darkgray, black);
+    border-radius: 17px;
+}
+
+.moviedesc::-webkit-scrollbar-thumb:hover {
+    border-color: black;
+}
+
+.moviedesc p {
+    margin: 25px;
+}
+
+.movieroller {
+    background-color: rgba(69, 69, 69, 0.7);
+    height: 90px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+.movierollest {
+    background-color: rgba(69, 69, 69, 0.7);
+    border-radius: 10px;
+    height: 110px;
+    width: 600px;
+    overflow-x: scroll;
+    top: 50dvh;
+    left: 50dvw;
+    z-index: 10;
+}
+
+
+.movieroller img {
+    width: 100px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.movierollest::-webkit-scrollbar {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+.movierollest::-webkit-scrollbar-thumb {
+    background: radial-gradient(white, var(--color));
+    border-radius: 10px;
+    border: 2px solid var(--color);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.movierollest::-webkit-scrollbar-track {
+    height: 10px;
+    background: linear-gradient(90deg,gray, darkgray, black);
+    border-radius: 10px;
+}
+
+.movierollest::-webkit-scrollbar-thumb:hover {
+    border-color: black;
+}
+
+.movieroller img:hover {
+    scale: 1.05;
+    cursor: pointer;
 }
