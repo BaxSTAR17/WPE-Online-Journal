@@ -20,6 +20,8 @@ let bchurch = document.querySelector(".bchurch"),
 bgMusic.addEventListener("ended", repeatBg);
 bgMusic.volume = 0.1;
 
+addEventListener("load", unloader);
+
 // document.addEventListener("load", () => 
 //     setTimeout(function(){
 //         document.getElementById("preloader").style.opacity = 0;
@@ -30,6 +32,11 @@ bgMusic.volume = 0.1;
 //     }, 2000)
 // );
 
+function unloader() {
+    console.log("It works");
+    document.getElementById("loader").style.display = "none";
+}
+ 
 function repeatBg(e) {
     e.target.currentTime = 0;
     e.target.play();
@@ -59,6 +66,7 @@ function playBg(n) {
 }
 
 bchurch.addEventListener("click", function() {
+    document.getElementById("loader").style.display = "flex";
     if (bbox.textContent == "GO☨BACK") {
         bboxfunc() //go back function
     }
@@ -73,6 +81,7 @@ bchurch.addEventListener("click", function() {
         tbox2.style.fontSize = "13.5px";
         tbox2.innerHTML = "FUN FACTS ABOUT SU CHURCH: <br /> <ul> <li> It is the tallest building of the university </li> <li> It is a protestant church </li> <li> Its view of the sunrise is not obstructed by anything </li> </ul>"
         playBg(1);
+        document.getElementById("loader").style.display = "none";
     }
 });
 

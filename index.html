@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./stylers/main.css">
     <link id="linkstyle" rel="stylesheet" href="">
     <link rel="icon" href="./assets/images/My WPE ONline (1) (1).png">
-    <link rel="preload" as="stylesheet" href="./stylers/church.css">
-    <link rel="preload" as="stylesheet" href="./stylers/classroom.css">
-    <link rel="preload" as="stylesheet" href="./stylers/culture.css">
-    <link rel="preload" as="stylesheet" href="./stylers/community.css">
-    <link rel="preload" as="stylesheet" href="./stylers/court.css">
+    <link rel="preload" as="style" href="./stylers/church.css">
+    <link rel="preload" as="style" href="./stylers/classroom.css">
+    <link rel="preload" as="style" href="./stylers/culture.css">
+    <link rel="preload" as="style" href="./stylers/community.css">
+    <link rel="preload" as="style" href="./stylers/court.css">
 </head>
 <body>
-    <section class="mainwrap">
-        <div class="bgchurch"></div>
+    <section class="mainwrap" onload="unloader()">
+        <div class="bgchurch" onload="unloader()"></div>
         <div class="bgclassroom"></div>
         <div class="bgcommunity"></div>
         <div class="bgculture"></div>
@@ -59,9 +59,12 @@
         <a href="./community/index.htm" class="gocommunity">GO</a>
         <a href="./court/index.htm" class="gocourt">GO</a>
     </section>
+    <aside id="loader">
+    
+    </aside>
     <div id="preloader">
             <img src="./assets/images/My WPE ONline.gif" alt="logo">
     </div>
 </body>
-<script src="scripter.js"></script>
+<script defer src="scripter.js"></script>
 </html>

@@ -26,3 +26,6 @@ button.bchurch:hover {
     border-width: 3px;
     color: var(--color);
 }
+#loader {
+    display: none;
+}
