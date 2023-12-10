@@ -69,6 +69,7 @@ bchurch.addEventListener("click", function() {
     document.getElementById("loader").style.display = "flex";
     if (bbox.textContent == "GO☨BACK") {
         bboxfunc() //go back function
+        document.getElementById("loader").style.display = "none";
     }
     else {
         linkStyle.href = "./stylers/church.css"; 
@@ -86,8 +87,10 @@ bchurch.addEventListener("click", function() {
 });
 
 bclassroom.addEventListener("click", function() {
+    document.getElementById("loader").style.display = "flex";
     if (bbox.textContent == "GO✓BACK") {
         bboxfunc()
+        document.getElementById("loader").style.display = "none";
     }
     else {
         linkStyle.href = "./stylers/classroom.css"; 
@@ -99,12 +102,15 @@ bclassroom.addEventListener("click", function() {
         tbox2.innerHTML = "The Activities Under Classroom can be as follows: <br /> <ul> <li> Lectures, and sypmosiums </li> <li> orientations and discussions </li> <li> workshops and talks </li> <li> classroom activities and educational activities </li> </ul>"
         tbox2.style.fontSize = "21px";
         playBg(2);
+        document.getElementById("loader").style.display = "none";
     }
 });
 
 bcommunity.addEventListener("click", function() {
+    document.getElementById("loader").style.display = "flex";
     if (bbox.textContent == "GO⚧BACK") {
         bboxfunc()
+        document.getElementById("loader").style.display = "none";
     }
     else {
         linkStyle.href = "./stylers/community.css"; 
@@ -116,12 +122,15 @@ bcommunity.addEventListener("click", function() {
         tbox2.innerHTML = "&nbsp&nbsp&nbsp&nbspThe fourth C is community! It covers community service events that promote good advocacies and practice beneficial events that helps out different communities and allows us to connect to them more and be with them. There are a total of 8 entries and 8 points total for this journal portion. If you want to see the events for community, Press the 'GO' button displayed at the bottom right!"
         tbox2.style.fontSize = "16px";
         playBg(4);
+        document.getElementById("loader").style.display = "none";
     }
 });
 
 bculture.addEventListener("click", function() {
+    document.getElementById("loader").style.display = "flex";
     if (bbox.textContent == "GO⍟BACK") {
         bboxfunc()
+        document.getElementById("loader").style.display = "none";
     }
     else {
         linkStyle.href = "./stylers/culture.css"; 
@@ -133,12 +142,15 @@ bculture.addEventListener("click", function() {
         tbox2.innerHTML = "The Events inside Culture can be as follows: <br /> <ul> <li> Festivals and Fiestas </li> <li> Parades and Walks </li> <li> Traditional events </li> <li> International events </li> </ul>"
         tbox2.style.fontSize = "20px";
         playBg(3);
+        document.getElementById("loader").style.display = "none";
     }
 });
 
 bcourt.addEventListener("click", function() {
+    document.getElementById("loader").style.display = "flex";
     if (bbox.textContent == "GO◍BACK") {
         bboxfunc()
+        document.getElementById("loader").style.display = "none";
     }
     else {
         linkStyle.href = "./stylers/court.css"; 
@@ -150,6 +162,7 @@ bcourt.addEventListener("click", function() {
         tbox2.innerHTML = "&nbsp&nbsp&nbsp&nbspThe fiftth C is Court! It refers to the usual venue and place of most sports and physical competitions that promotes sportsmanship, excellenece, skill, teamwork, physical ability and strategy all in one! The Court portion of my journal has a total of 7 entries and 8s points. If you want my different sports events to be shown, press the 'GO' button on the right!"
         tbox2.style.fontSize = "18px";
         playBg(5);
+        document.getElementById("loader").style.display = "none";
     }
 });
 
