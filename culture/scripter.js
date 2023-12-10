@@ -15,6 +15,10 @@ function cardSelect(el, iden) {
         document.querySelector(`.${el.className.split(" ")[2]} .cardD`).classList.add('pstyle1');
         document.querySelector('.fleft').style.backgroundImage = `url(./images/CULTURE/${iden}/pic1.jpg)`;
         document.querySelector('.fright').style.backgroundImage = `url(./images/CULTURE/${iden}/pic2.jpg)`;
+        if (iden == 'two') {
+            document.querySelector('.fleft').style.backgroundImage = "url(./images/CULTURE/two/pic1.JPG)";
+            document.querySelector('.fright').style.backgroundImage = "url(./images/CULTURE/two/pic2.JPG)";
+        }
         selectedCard = el;
         selected = true;
     }
