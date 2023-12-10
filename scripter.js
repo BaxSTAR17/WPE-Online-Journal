@@ -22,18 +22,7 @@ bgMusic.volume = 0.1;
 
 addEventListener("load", unloader);
 
-// document.addEventListener("load", () => 
-//     setTimeout(function(){
-//         document.getElementById("preloader").style.opacity = 0;
-//         // document.getElementById("preloader").style.display = "none";
-//         // document.getElementById("preloader").style.visibility = "hidden";
-//         document.getElementById("preloader").style.zIndex = -3;
-//         document.removeEventListener("load", setTimeout(deload, 2000));
-//     }, 2000)
-// );
-
 function unloader() {
-    console.log("It works");
     document.getElementById("loader").style.display = "none";
 }
  

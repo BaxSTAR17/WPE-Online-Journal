@@ -48,3 +48,9 @@ function collide(a, b) {
         (aRect.left > (bRect.left + bRect.width))
     );
 }
+
+addEventListener("load", unloader);
+
+function unloader() {
+    document.getElementById("loader").style.display = "none";
+}

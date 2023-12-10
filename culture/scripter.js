@@ -50,3 +50,9 @@ function nextHand(dir, num) {
         }
     }
 }
+
+addEventListener("load", unloader);
+
+function unloader() {
+    document.getElementById("loader").style.display = "none";
+}

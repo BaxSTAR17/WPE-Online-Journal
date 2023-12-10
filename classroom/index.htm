@@ -288,6 +288,9 @@
             </tr>
         </table>
     </div>
+    <aside id="loader">
+    
+    </aside>
 </body>
 <script defer>
     let check1 = document.getElementById("one");
@@ -302,5 +305,11 @@
     check1.checked = false;
 
     document.getElementById('fivewrap').scrollLeft = 0;
+
+    addEventListener("load", unloader);
+
+    function unloader() {
+        document.getElementById("loader").style.display = "none";
+    }
 </script>
 </html>

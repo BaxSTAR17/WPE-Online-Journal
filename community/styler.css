@@ -376,3 +376,31 @@ input {
     scale: 1.05;
     cursor: pointer;
 }
+
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(69,69,69,0.6);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 20px ridge gray;
+    background-color: transparent;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from { rotate: 0deg }
+    to { rotate: 1turn }
+}
