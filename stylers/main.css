@@ -229,7 +229,6 @@ body {
     border-radius: min(calc(40dvw / 30), calc(600px / 30));
     transition: all 0.3s ease-in-out;
     color: white;
-    font-size: min(calc(2dvh - 1px), 16px);
 }
 .btnwrap > button:hover {
     border-color: rgba(0, 0, 0, 0);
