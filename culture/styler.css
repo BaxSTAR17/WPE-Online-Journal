@@ -249,6 +249,7 @@ label {
 .arrows:hover {
     scale: 1.2;
     color: gray;
+    cursor: pointer;
 }
 
 @keyframes portrude {

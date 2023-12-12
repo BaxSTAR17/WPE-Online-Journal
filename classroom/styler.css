@@ -55,6 +55,7 @@ body {
 
 .post:hover {
     scale: 1.15;
+    cursor: pointer;
 }
 
 .pone {
