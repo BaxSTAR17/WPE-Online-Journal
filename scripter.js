@@ -127,7 +127,7 @@ bculture.addEventListener("click", function() {
         lbox1.textContent = "Entry Count: 8 ENTRIES";
         lbox2.textContent = "Point Tally: 12 PTS.";
         lbox1.style.fontWeight = "1";
-        tbox1.innerHTML = "&nbsp&nbsp&nbsp&nbspThe third C is culture! The C with one of tne of the most colorful, intriguing, fun and unique events that are part of the culture of the place that can also promote culture of anything whether it may be of other countries or even organizations and communities. If you want to look at the events, navigate to the 'GO' button displayed at the bottom!"
+        tbox1.innerHTML = "&nbsp&nbsp&nbsp&nbspThe third C is culture! The C with one of the of the most colorful, intriguing, fun and unique events that are part of the culture of the place that can also promote culture of anything whether it may be of other countries or even organizations and communities. If you want to look at the events, navigate to the 'GO' button displayed at the bottom!"
         tbox2.innerHTML = "The Events inside Culture can be as follows: <br /> <ul> <li> Festivals and Fiestas </li> <li> Parades and Walks </li> <li> Traditional events </li> <li> International events </li> </ul>"
         tbox2.style.fontSize = "20px";
         playBg(3);

@@ -1,31 +1,132 @@
-.bgchurch { background-image: url("../assets/images/church.gif");
-    background-size: cover; width: 100dvw; height: 100dvh; z-index: -1;}
-.bgchurch::before { opacity: 1; } 
-.bgchurch::after { opacity: 1; } 
-.p1 { transform: translate(40dvw, 0); } 
-.pic1 { opacity: 0; }
-.pic1:nth-of-type(2) { opacity: 1; }
-.p2 { transform: translate(-5dvw, 0); } 
-.pic2 { opacity: 0; }
-.pic2:nth-of-type(2) { opacity: 1; }
-.tbox1 { transform: translate(-2dvw, -58dvh); width: 550px; font-size: 17px;} 
-.tbox2 { transform: translate(-3dvw, -57dvh); width: 215px; } 
-.lbox1 { width: 200px; transform: translate(0, -23dvh); } 
-.lbox2 { width: 200px; transform: translate(-15dvw, 6dvh); } 
-.bchurch { background-color: white; }
-.gochurch { visibility: visible; opacity: 1;}
-button.bchurch { 
-    background-color: lightgray;
-    color: var(--color);
-    scale: 0.9;
+.bgchurch {
+  background-image: url("../assets/images/church.gif");
+  background-size: cover;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: -1;
+  position: absolute;
+}
+.bgchurch::before {
+  opacity: 1;
+}
+.bgchurch::after {
+  opacity: 1;
+}
+.p1 {
+  position: absolute;
+  transform: translate(40dvw, 0);
+}
+.pic1 {
+  opacity: 0;
+}
+.pic1:nth-of-type(2) {
+  opacity: 1;
+}
+.p2 {
+  position: absolute;
+  transform: translate(-5dvw, 0);
+}
+.pic2 {
+  opacity: 0;
+}
+.pic2:nth-of-type(2) {
+  opacity: 1;
+}
+.tbox1 {
+  position: absolute;
+  transform: translate(-2dvw, -58dvh);
+  width: 35dvw;
+}
+.tbox2 {
+  position: absolute;
+  transform: translate(-3dvw, -57dvh);
+  width: 13dvw;
+  text-align: left;
+}
+.lbox1 {
+  position: absolute;
+  width: 200px;
+  transform: translate(0, -23dvh);
+}
+.lbox2 {
+  position: absolute;
+  width: 200px;
+  transform: translate(-15dvw, 6dvh);
+}
+.bchurch {
+  background-color: white;
+}
+.gochurch {
+  visibility: visible;
+  opacity: 1;
+}
+button.bchurch {
+  background-color: lightgray;
+  color: var(--color);
+  scale: 0.9;
 }
 button.bchurch:hover {
-    scale: 1.1;
-    background-color: white;
-    border-color: gray;
-    border-width: 3px;
-    color: var(--color);
+  scale: 1.1;
+  background-color: white;
+  border-color: gray;
+  border-width: 3px;
+  color: var(--color);
 }
 #loader {
-    display: none;
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .p1 {
+        transform: translate(0, 0);
+        position: absolute;
+        top: 20dvh;
+        width: 50dvw;
+    }
+
+    .tbox1 {
+        transform: translate(0, 0);
+        top: 55dvh;
+        width: 90%;
+        font-size: 2dvw;
+    }
+
+    .lbox1 {
+        transform: translate(0, 0);
+        top: 65dvh;
+        width: 100dvw;
+    }
+
+    .p2 {
+        transform: translate(0, 0);
+        top: 69dvh;
+        left: 5dvw;
+        width: 50dvw;
+    }
+
+    .lbox2 {
+        transform: translate(0, 0);
+        top: 52dvh;
+        font-size: 0.7rem;
+        width: 100dvw;
+    }
+
+    .gochurch {
+      top: 15dvh;
+      left: 40dvw;
+    }
+
+    .tbox2 {
+        transform: translate(0, 0);
+        top: 70dvh;
+        left: 60dvw;
+        width: 30dvw;
+        font-size: 2dvw;
+        height: 25dvh;
+        overflow-y: scroll;
+    }
+
+    .bgclassroom:after {
+      top: 3dvh;
+      left: 1dvw;
+    }
 }

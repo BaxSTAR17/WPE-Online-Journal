@@ -322,9 +322,11 @@ input {
 .movieroller {
     background-color: rgba(69, 69, 69, 0.7);
     height: 90px;
-    width: auto;
+    width: 100%;
     border-radius: 10px;
     display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .movierollest {
@@ -332,7 +334,6 @@ input {
     border-radius: 10px;
     height: 110px;
     width: 600px;
-    overflow-x: scroll;
     top: 50dvh;
     left: 50dvw;
     z-index: 10;
@@ -349,32 +350,10 @@ input {
     transition: all 0.2s ease-in-out;
 }
 
-.movierollest::-webkit-scrollbar {
-    background-color: darkgray;
-    border-radius: 10px;
-}
-
-.movierollest::-webkit-scrollbar-thumb {
-    background: radial-gradient(white, var(--color));
-    border-radius: 10px;
-    border: 2px solid var(--color);
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-
-.movierollest::-webkit-scrollbar-track {
-    height: 10px;
-    background: linear-gradient(90deg,gray, darkgray, black);
-    border-radius: 10px;
-}
-
-.movierollest::-webkit-scrollbar-thumb:hover {
-    border-color: black;
-}
-
 .movieroller img:hover {
     scale: 1.05;
     cursor: pointer;
+    border: 5px ridge yellow;
 }
 
 #loader {

@@ -16,8 +16,10 @@ body {
     opacity: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-shadow: 2px 2px 2px black;
     perspective: 10000px;
+    flex-direction: column;
 }
 
 .mainwrap::before {
@@ -84,7 +86,7 @@ body {
     font-family: Tahoma;
     font-weight: 700;
     color: white;
-    font-size:100px;
+    font-size:10dvh;
     opacity: 0;
     transition: opacity 0.2s linear;
 }
@@ -107,12 +109,12 @@ body {
 .bgclassroom::after {
     position: absolute;
     content: "CLASSROOM";
-    top: 70dvh;
-    left: 0;
+    top: 72dvh;
+    left: 2dvw;
     font-family: Tahoma;
     font-weight: 700;
     color: white;
-    font-size:100px;
+    font-size:10dvh;
     opacity: 0;
     transition: opacity 0.2s linear;
 }
@@ -135,12 +137,12 @@ body {
 .bgcommunity::after {
     position: absolute;
     content: "COMMUNITY";
-    top: 70dvh;
-    left: 55dvw;
+    top: 72dvh;
+    left: 60dvw;
     font-family: Tahoma;
     font-weight: 700;
     color: white;
-    font-size:100px;
+    font-size:10dvh;
     opacity: 0;
     transition: opacity 0.2s linear;
 }
@@ -164,11 +166,11 @@ body {
     position: absolute;
     content: "CULTURE";
     top: 70dvh;
-    left: 35dvw;
+    left: 39dvw;
     font-family: Tahoma;
     font-weight: 700;
     color: white;
-    font-size:100px;
+    font-size:10dvh;
     opacity: 0;
     transition: opacity 0.2s linear;
 }
@@ -196,18 +198,16 @@ body {
     font-family: Tahoma;
     font-weight: 700;
     color: white;
-    font-size:100px;
+    font-size:10dvh;
     opacity: 0;
     transition: opacity 0.2s linear;
 }
 
 .btnwrap {
-    position: absolute;
     border: min(calc(40dvw / 600), calc(600px / 600)) solid white;
     border-radius: min(calc(40dvw / 20), calc(600px / 20));
     width: min(40dvw, 600px);
     height: min(14dvh, 100px);
-    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +229,9 @@ body {
     border-radius: min(calc(40dvw / 30), calc(600px / 30));
     transition: all 0.3s ease-in-out;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btnwrap > button:hover {
     border-color: rgba(0, 0, 0, 0);
@@ -262,7 +265,7 @@ body {
 }
 .tbox1 {
     position: absolute;
-    height: min(23dvh, 160px);
+    height: fit-content;
     width: min(33dvw, 540px);
     /* border: 2px solid white; */
     top: 68dvh;
@@ -272,7 +275,7 @@ body {
     padding: min(calc(23dvh / 16 - 2px), 7px);
     border-radius: min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18)) min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18));
     font-weight: bold;
-    font-size: min(calc(23dvh / 10), calc(160px / 10));
+    font-size: clamp(0.5rem, 1dvw, 2dvw);
     align-items: center;
     display: flex;
     text-align: justify;
@@ -281,7 +284,7 @@ body {
 .tbox2 {
     display: flex;
     position: absolute;
-    height: min(27dvh, 200px);
+    height: fit-content;
     width: min(14dvw, 200px);
     /* border: 2px solid white; */
     top: 65dvh;
@@ -292,7 +295,7 @@ body {
     padding: 7px;
     border-radius: min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18)) min(calc(23dvh / 16 - 2px), 7px) min(calc(33dvw / 18), calc(540px / 18));
     font-weight: bold;
-    font-size: 13.5px;
+    font-size: clamp(0.5rem, 1dvw, 2dvw);
     align-items: center;
     display: flex;
     text-align: justify;
@@ -321,41 +324,18 @@ body {
     font-size: min(2dvh, 16px);
 }
 .btnbox {
-    position: absolute;
     height: min(4dvh, 25px);
     width: min(8dvw, 130px);
     border: min(calc(8dvw / 65), calc(130px / 65)) solid white;
     background: linear-gradient(217deg, rgba(7, 85, 85, 0.8), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, rgba(99, 99, 18, 0.8), rgba(0,255,0,0) 70.71%),
                 linear-gradient(336deg, rgba(120, 14, 120, 0.8), rgba(0,0,255,0) 70.71%);
-    top: 57dvh;
     border-radius: min(4dvh, 25px);
     color: white;
     text-align: center;
     font-size: min(3dvh, 18px);
     font-family: tahoma;
     font-weight: 550;
-}
-.btnwrap::before {
-    content: "";
-    position: absolute;
-    border: 1px solid white;
-    border-radius: min(calc(40dvw / 20), calc(600px / 20));
-    width: min(40dvw, 600px);
-    height: min(14dvh, 100px);
-    align-items: center;
-    gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: linear-gradient(336deg, rgba(217,217,0,1), rgba(0,0,255,0) 70.71%), 
-                linear-gradient(127deg, rgba(0, 217,217,1), rgba(0,255,0,0) 70.71%),
-                linear-gradient(217deg, rgba(217,0, 217,1), rgba(255,0,0,0) 70.71%);
-    opacity: 0;
-    z-index: -2;
-    animation: mold 8s linear infinite;
 }
 @keyframes mold {
     0% {
@@ -485,4 +465,66 @@ body {
 .pic2:first-of-type {
     opacity: 1;
     scale: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainwrap {
+        width: 100dvw;
+        height: 100dvh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow:visible;
+    }
+
+    .btnwrap {
+        width: 100dvw;
+        z-index: 2;
+    }
+
+    .btnwrap > button {
+        flex-grow: 1;
+        border-radius: 10px;
+        font-size: 60%;
+        height: 60%;
+    }
+
+    .btnbox {
+        width: 40dvw;
+        z-index: 2;
+    }
+
+    .p1 {
+        position: absolute;
+        top: 20dvh;
+        width: 50dvw;
+    }
+
+    .tbox1 {
+        top: 55dvh;
+        width: 90%;
+        font-size: 2dvw;
+    }
+
+    .tbox2 {
+        top: 70dvh;
+    }
+
+    .lbox1 {
+        top: 67dvh;
+        width: 100dvw;
+    }
+
+    .p2 {
+        top: 69dvh;
+        left: calc(50dvw - 25dvw);
+        width: 50dvw;
+    }
+
+    .lbox2 {
+        top: 52dvh;
+        font-size: 0.7rem;
+        width: 100dvw;
+    }
 }

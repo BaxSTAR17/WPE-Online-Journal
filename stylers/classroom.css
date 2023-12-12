@@ -1,4 +1,4 @@
-.bgclassroom { background-image: url("../assets/images/classroom.gif");
+.bgclassroom { position: absolute; background-image: url("../assets/images/classroom.gif");
   background-size: cover; width: 100dvw; height: 100dvh; z-index: -1;}
 .bgclassroom::before {
   opacity: 1;
@@ -17,12 +17,12 @@
 .pic2 { opacity: 0; }
 .pic2:nth-of-type(3) { opacity: 1; }
 .tbox1 {
-  animation-play-state: paused;
   transform: translate(8dvw, -1dvh);
   font-size: 18px;
 }
 .tbox2 {
-  width: 600px;
+  width: 50dvw;
+  font-size: clamp(0.5rem, 1vw, 1dvw);
   transform: translate(-42dvw, -53dvh);
 }
 .lbox1 {
@@ -48,4 +48,59 @@ button.bclassroom:hover {
   border-color: gray;
   border-width: 3px;
   color: var(--color);
+}
+@media only screen and (max-width: 1000px) {
+  .p1 {
+        transform: translate(0, 0);
+        position: absolute;
+        top: 20dvh;
+        width: 50dvw;
+    }
+
+    .tbox1 {
+        transform: translate(0, 0);
+        top: 55dvh;
+        width: 90%;
+        font-size: 2dvw;
+    }
+
+    .lbox1 {
+        transform: translate(0, 0);
+        top: 65dvh;
+        width: 100dvw;
+    }
+
+    .p2 {
+        transform: translate(0, 0);
+        top: 69dvh;
+        left: 5dvw;
+        width: 50dvw;
+    }
+
+    .lbox2 {
+        transform: translate(0, 0);
+        top: 52dvh;
+        font-size: 0.7rem;
+        width: 100dvw;
+    }
+
+    .goclassroom {
+      top: 15dvh;
+      left: 40dvw;
+    }
+
+    .tbox2 {
+        transform: translate(0, 0);
+        top: 70dvh;
+        left: 60dvw;
+        width: 30dvw;
+        font-size: 2dvw;
+        height: 25dvh;
+        overflow-y: scroll;
+    }
+
+    .bgclassroom:after {
+      top: 3dvh;
+      left: 1dvw;
+    }
 }
